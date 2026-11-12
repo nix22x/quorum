@@ -1,0 +1,9 @@
+Stage 1 approved. Proceed to Stage 2 only: the docked detail panel and the other views, per the original brief. Keep usage low: work at medium effort, take screenshots at 1600 and 1280 only, run the full browser journey once at the end (not after every small change), and do at most one look-and-fix pass.
+
+Give the policy hub more presence (a clearer title row and a slightly stronger border or accent, no decorative glow) so it reads as a focal point.
+
+IMPORTANT: when the docked panel is open at 1280, do NOT shrink the canvas below its current scale (effective text must stay at or above 11px). Instead let the canvas pan and auto-scroll so the selected node stays visible beside the panel; the panel may be 380px wide.
+
+Fix D2, D3 and D7 according to the original brief without changing any workflow behaviour: no changes to server.js, the API contract, state transitions, validation or audit semantics. Keep server.js and data/ untouched, tests at 12/12.
+
+Stop and report with measured results. Stage 2 approval does not imply Stage 3 approval; do not start Stage 3.

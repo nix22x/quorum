@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Quorum</title>
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/app.css">
+<link rel="stylesheet" href="/canvas.css">
+<link rel="stylesheet" href="/panel.css">
+</head>
+<body>
+<div class="shell" id="shell">
+  <aside class="rail" aria-label="Primary">
+    <div class="brand"><span class="brand-mark" id="brandMark" aria-hidden="true"></span><span class="brand-word">Quorum</span></div>
+    <div class="tenant" id="tenant"></div>
+    <nav id="nav" aria-label="Sections"></nav>
+    <div class="rail-foot" id="integrations"></div>
+  </aside>
+  <main class="main" id="main">
+    <header class="top" id="top">
+      <nav class="crumb" aria-label="Breadcrumb"><span id="crumbTenant">Northgate</span><span class="crumb-sep" aria-hidden="true">/</span><span id="crumb" aria-current="page">Command</span></nav>
+      <span class="paused-pill" id="pausedPill" hidden>All work paused</span>
+      <div class="top-actions">
+        <button class="btn ghost" id="btnReset" type="button" title="Restore sample data and clear the audit log"></button>
+        <button class="btn warn" id="btnPause" type="button"></button>
+      </div>
+    </header>
+    <div class="notice" role="note" id="notice"></div>
+    <section id="view" tabindex="-1"></section>
+  </main>
+  <aside class="drawer" id="drawer" hidden aria-label="Run detail"></aside>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="/icons.js"></script>
+<script src="/canvas.js"></script>
+<script src="/events.js"></script>
+<script src="/panel.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

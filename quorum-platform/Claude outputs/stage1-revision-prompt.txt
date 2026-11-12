@@ -1,0 +1,10 @@
+Stage 1 revision (before Stage 2). Keep what passed. Fix the following, then stop and report; do not start Stage 2.
+
+0. Look at the three reference images attached to this message (ctrl.ai, Barnabus, Orchestra) before changing the canvas, and compare your result against them at the end.
+1. EVIDENCE: audit/after/command-1600.png and command-1280.png show the OLD UI (six KPI tiles and the text-only card row). Explain how that happened, regenerate every audit/after screenshot from the current build, and delete or rename stale files. Add command-1600.png, command-1280.png, command-1024.png (no drawer open) to the report.
+2. Connectors: lengthen the visible rail between cards to at least 64px (recompose the layout if needed, e.g. a two-tier or arced layout), so flow is visible. Keep cards at least 176px wide at design size.
+3. Status words must not overstate. Gatekeeper: separate "Blocked by policy" (consent, opt-out, cap, validation) from "Not eligible" (too new, too old, wrong status). A node shows "Blocked" only when its own step blocked something; the Drafter must not show Blocked for a missing quote total unless that is a Drafter refusal and is labelled as such. Use a calm status vocabulary (Idle, Working, Waiting on you, Needs attention, Done) with counts, not worst-case colours. Update hub labels and tests.
+4. Report EFFECTIVE text size (CSS size x canvas scale) at 1280 and 1024; smallest canvas text at least 11px, node titles and status words at least 12px at 1280. Redesign rather than report a miss.
+5. Whole canvas plus status line visible without scrolling at 1280x800; at 1024 either fit the whole pipeline legibly or show a clear "more ->" cue so Hand-off and Reply triage are discoverable.
+6. Provide the missing S1-9 assessment: per reference (ctrl.ai, Barnabus, Orchestra) what was adopted, not adopted, and where it falls short, with screenshot paths.
+Re-run tests and browser checks. Keep server.js behaviour and data/ untouched.
